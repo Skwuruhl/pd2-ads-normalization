@@ -1,0 +1,10 @@
+{
+	"name": "Aim Sensitivity Fix",
+	"priority": 0,
+	"persist_scripts": [
+		{
+			"global": "NormalizedSens",
+			"script_path": "Lib\\LUA\\NormalizedSens.lua"
+		}
+	]
+}
