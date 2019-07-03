@@ -1,0 +1,13 @@
+{
+	"name" : "Zoom Sensitivity Fix",
+	"description" : "Makes zoomed sensitivity scale by focal length.",
+    "author" : "Skwuruhl",
+    "contact" : "https://github.com/Skwuruhl",
+    "version" : "1.0",
+	"hooks" : [
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "zoomSensitivityFix.lua"
+		}
+	]
+}
