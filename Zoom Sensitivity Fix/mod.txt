@@ -1,11 +1,14 @@
 {
 	"name" : "Zoom Sensitivity Fix",
-	"description" : "Makes zoomed sensitivity scale by focal length.",
-    "author" : "Skwuruhl",
-    "contact" : "https://github.com/Skwuruhl",
-    "version" : "1.0",
+	"description" : "Makes zoomed sensitivity properly scale by zoom amount.",
+	"author" : "Skwuruhl",
+	"contact" : "reddit.com/u/skwuruhl",
+	"version" : "v1.0",
+	"blt_version" : 2,
+	"image" : "Acough_Optic.png",
+	"color" : "255 192 203",
 	"hooks" : [
-		{
+		{ 	
 			"hook_id" : "lib/managers/menumanager",
 			"script_path" : "zoomSensitivityFix.lua"
 		}
