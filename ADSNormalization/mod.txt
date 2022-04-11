@@ -1,0 +1,24 @@
+{
+	"name" : "Zoom Sensitivity Fix",
+	"description" : "Makes zoomed sensitivity properly scale by zoom amount.",
+	"author" : "Skwuruhl",
+	"contact" : "reddit.com/u/skwuruhl",
+	"version" : "v1.1",
+	"blt_version" : 2,
+	"image" : "Acough_Optic.png",
+	"color" : "255 192 203",
+	"updates" : [
+    {
+        "identifier" : "adsnormalization",
+        "host": {
+            "meta": ""
+        }
+    }
+	],
+	"hooks" : [
+		{ 	
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "menumanager.lua"
+		}
+	]
+}
