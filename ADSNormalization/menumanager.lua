@@ -15,13 +15,13 @@ function MenuManager:set_mouse_sensitivity(zoomed)
 
 		if alive(state._equipped_unit) then
 			local fov = managers.user:get_setting("fov_multiplier")
-			local scale = math.tan(math.rad((state._equipped_unit:base():zoom() or 65) * (fov + 1) / 2)) / math.tan(math.rad(65 * fov))
+			local scale = math.tan((state._equipped_unit:base():zoom() or 65) * (fov + 1) / 2 / 2) / math.tan(65 * fov/2)
 			sense_x = sense_x * scale
 			sense_y = sense_y * scale
 		end
 	end
 
-	local multiplier = Vector3()
+	local multiplier = temp_vec1
 
 	mvector3.set_static(multiplier, sense_x * self._look_multiplier.x, sense_y * self._look_multiplier.y, 0)
 	self._controller:get_setup():get_connection("look"):set_multiplier(multiplier)
