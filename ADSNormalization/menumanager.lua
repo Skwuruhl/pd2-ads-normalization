@@ -21,7 +21,7 @@ function MenuManager:set_mouse_sensitivity(zoomed)
 		end
 	end
 
-	local multiplier = temp_vec1
+	local multiplier = Vector3()
 
 	mvector3.set_static(multiplier, sense_x * self._look_multiplier.x, sense_y * self._look_multiplier.y, 0)
 	self._controller:get_setup():get_connection("look"):set_multiplier(multiplier)
